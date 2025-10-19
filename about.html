@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IT u senzorskim sistemima</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 🔽 Navigation Menu -->
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Meni</button>
+      <div class="dropdown-content">
+        <a href="index.html">Početna stranica</a>
+        <a href="senzori.html">O senzorima</a>
+        <a href="about.html">Objašnjenje</a>
+        <a href="contact.html">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🧱 Sadržaj stranice -->
+  <main>
+    <h1 class="text-box-1">Objašnjenje</h1>
+    <div class="text-box-1">
+    <p>Ovim sajtom je prikazan eksperiment koji je obavljen na Fakultetu Tehničkih Nauka, 
+        sa ciljem da bliže prikaže studentima kako senzorski sistemi mogu da budu korišćeni, koja im je svakodnevna upotreba, 
+        i na koje načine ih možemo implementovati u svakodnevnom životu.</p>
+  </div>
+  <div class="slideshow-container">
+  <div class="slide">
+    <img src="images/slide1.jpg" alt="Slide 1">
+  </div>
+  <div class="slide">
+    <img src="images/slide2.jpg" alt="Slide 2">
+  </div>
+  <div class="slide">
+    <img src="images/slide3.jpg" alt="Slide 3">
+  </div>
+</div>
+
+  </main>
+<script>
+  let slideIndex = 0;
+
+  function showSlides() {
+    const slides = document.getElementsByClassName("slide");
+    for (let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) { slideIndex = 1 }
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 3000); // Change image every 3 seconds
+  }
+
+  showSlides(); // Start the slideshow
+</script>
+
+<section class="sensor-info">
+  <h2>Senzorski sistemi u svakodnevici</h2>
+  <p>
+    Senzorski sistemi predstavljaju nevidljive junake savremenog sveta — oni prikupljaju podatke iz okruženja i omogućavaju automatizaciju, preciznost i interaktivnost u brojnim oblastima. Za studente, razumevanje njihove primene otvara vrata ka inovacijama i praktičnom rešavanju problema.
+  </p>
+  <p>
+    <strong>Svakodnevna upotreba senzora:</strong><br>
+    Pametne kuće, zdravstvo, transport i industrija koriste senzore za upravljanje, merenje i optimizaciju procesa.
+  </p>
+  <p>
+    <strong>Implementacija u obrazovanju:</strong><br>
+    Eksperimenti u učionici, projekti sa Arduinom, ekološki monitoring — sve su to načini da studenti praktično primene senzore.
+  </p>
+  <p>
+    <strong>Zašto je važno?</strong><br>
+    Razumevanje senzorskih sistema razvija tehničke veštine, kreativnost i sposobnost rešavanja realnih problema.
+  </p>
+</section>
+
+<div class="youtube-video">
+    <iframe width="560" height="315" src="https://youtu.be/XI49uFm5HRE?si=ToMRiqJk15Lpgixk" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen></iframe>
+</div>
+
+<center>
+<button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="to-top-btn">Vrati se na vrh</button>
+</center>
+
+
+</body>
+</html>
